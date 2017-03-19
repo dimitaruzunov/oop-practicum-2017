@@ -85,9 +85,10 @@ int Group::findStudent(size_t fn) const
 
 bool Group::changeFN(const char* name,size_t newFN)
 {
-    if(findStudent(name) != -1)
+    int index = findStudent(name);
+    if(index != -1)
     {
-        students[findStudent(name)].setFN(newFN);
+        students[index].setFN(newFN);
         return true;
     }
     return false;
@@ -104,3 +105,4 @@ void Group::print() const
     cout<<"Scholarship Students Count: "<<getScholarshipStudentsCount()<<endl;
     cout<<"--------------------------------\n";
 }
+
