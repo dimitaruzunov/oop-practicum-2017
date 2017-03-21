@@ -72,5 +72,5 @@ bank.addAccount(secondAccountOfIvan); // добавя втора сметка н
 bank.getAccountBalance("2"); // 500
 bank.removeAccount("2"); // премахва сметката на "Petar" от банката
 
-getClientBalance("Ivan"); // 2400
+bank.getClientBalance("Ivan"); // 2400
 ```
